@@ -9,45 +9,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
-    <title>Portfolio</title>
+    <title>Mis Proyectos</title>
 </head>
 <body class="bg-black text-light">
+    <!--NAV ESCRITORIO Y CELULARES-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-primary bg-body-tertiary" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand col-md-6" href="/index.html">MAXIMILIANO GUZMÁN</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html">MAXIMILIANO GUZMÁN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse col-md-6" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sobreMi.html">SOBRE MÍ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="educacion.html">EDUCACIÓN</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active"  aria-current="page" href="proyectos.html">PROYECTOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end text-bg-dark w-50" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÚ</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobreMi.html">SOBRE MÍ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"href="educacion.html">EDUCACIÓN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"  href="proyectos.html">PROYECTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>
         <!--PRESENTACIÓN-->
         <div class="container py-5">
             <div class="row align-items-center">
                 <div>
-                    <h1>PROYECTOS</h1>
+                    <h1 class="textoInicio">PROYECTOS</h1>
                 </div>
             </div>
         </div>
@@ -55,36 +65,36 @@
         <!--SECCIÓN PROYECTOS-->
         <div class="container py-4">
             <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
+                <div class=" tarjeta col">
                     <div class="card">
-                        <img src="/assets/img/proyecto1.png" class="card-img-top" alt="...">
+                        <img src="../assets/img/proyecto1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Proyecto 1</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="tarjeta col">
                     <div class="card">
-                        <img src="/assets/img/proyecto2.png" class="card-img-top" alt="...">
+                        <img src="../assets/img/proyecto2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Proyecto 2</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="tarjeta col">
                     <div class="card">
-                        <img src="/assets/img/proyecto3.png" class="card-img-top" alt="...">
+                        <img src="../assets/img/proyecto3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Proyecto 3</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="tarjeta col">
                     <div class="card">
-                        <img src="/assets/img/proyecto4.png" class="card-img-top" alt="...">
+                        <img src="../assets/img/proyecto4.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Proyecto 4</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -100,22 +110,29 @@
             <H2>TRABAJEMOS JUNTOS</H2>
 
             <div class="container text-center py-5">
-                <a href="pages/contacto.html" class="btn btn-outline-light rounded-5" role="button">Contactame ↗</a>
+                <a href="contacto.html" class="btn btn-outline-light rounded-5" role="button">Contactame ↗</a>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="container">
-            <!--linea-->
-            <hr class="border-light  border-2 my-4"> 
-            <div class="row text-center">
-                <p class="col-6">MAXIMILIANO GUZMÁN</p>
-                <div class="col-6">
-                    <div class="d-flex gap-5 justify-content-center">
-                        <div><a href="https://www.linkedin.com/in/maximiliano-guzmán-bb3392174/" class="text-decoration-none text-light"><i class="bi bi-linkedin me-2"></i></a></div>
-                        <div><a href="https://github.com/MaxGuzman17" class="text-decoration-none text-light"><i class="bi bi-github"></i></a></div>
-                    </div>                    
+        <div class="container py-4">
+            <hr class="border-light  border-2">
+            <div class="row align-items-center">
+                <!-- Texto de Copyright/Nombre -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-muted">&copy; 2025 MAXIMILIANO GUZMÁN</p>
+                </div>
+                <!-- Íconos de Redes Sociales -->
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.linkedin.com/in/maximiliano-guzmán-bb3392174/" class="text-muted mx-2"
+                        aria-label="Visitar perfil de LinkedIn">
+                        <i class="bi bi-linkedin fs-4"></i> <!-- Usamos fs-4 para controlar el tamaño del ícono -->
+                    </a>
+                    <a href="https://github.com/MaxGuzman17" class="text-muted mx-2"
+                        aria-label="Visitar perfil de GitHub">
+                        <i class="bi bi-github fs-4"></i>
+                    </a>
                 </div>
             </div>
         </div>

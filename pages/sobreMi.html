@@ -9,45 +9,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
-    <title>Portfolio</title>
+    <title>Sobre Mí</title>
 </head>
 <body class="bg-black text-light">
     <header>
-        <nav class="navbar navbar-expand-lg bg-primary bg-body-tertiary" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand col-md-6" href="/index.html">MAXIMILIANO GUZMÁN</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html">MAXIMILIANO GUZMÁN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse col-md-6" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="sobreMi.html">SOBRE MÍ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ducacion.html">EDUCACIÓN</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="proyectos.html">PROYECTOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end text-bg-dark w-50" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÚ</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="sobreMi.html">SOBRE MÍ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"href="educacion.html">EDUCACIÓN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"href="proyectos.html">PROYECTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>
         <!--PRESENTACIÓN-->
         <div class="container py-5">
             <div class="row align-items-center">
                 <div>
-                    <h1>CONSTRUYENDO EL FUTURO<br>CON CÓDIGO, LÓGICA Y<br>PASION POR LA TECNOLOGÍA</h1>
+                    <h1 class="textoInicio">DE LA IDEA AL CÓDIGO<br> Y DEL CÓDIGO A LA<br> INNOVACIÓN</h1>
                 </div>
             </div>
             <!--linea-->
@@ -57,7 +66,7 @@
         <!--IMAGEN-->
         <div class="container-fluid">
             <div class="text-center">
-                <img src="/assets/img/sobre mi.gif" class="img-fluid" alt="Sobre Mi">
+                <img src="../assets/img/sobre mi.gif" class="img-fluid" alt="Sobre Mi">
             </div>
         </div>
 
@@ -67,9 +76,9 @@
                 <div class="text-center">
                     <h2>SOBRE Mí</h2>
                 </div>
-                    <p>Cuento con más de cuatro años de experiencia en el ámbito tecnológico, combinando soporte técnico, administración de sistemas y desarrollo. Actualmente desempeño funciones en el área de Help Desk, donde brindo asistencia a clientes, gestiono migraciones de servidores, realizo mantenimiento y análisis de bases de datos, y aseguro la estabilidad de conexiones e interfaces.</p>
-                    <p>Mi formación como Analista en Sistemas, junto con mi paso por Ingeniería Electrónica, me dio una base sólida para entender tanto el hardware como el software.</p>
-                    <p>Hoy mi enfoque está en el desarrollo de soluciones que optimicen procesos y mejoren la experiencia del usuario, integrando eficiencia técnica con una visión práctica e innovadora.</p>          
+                    <p>Desde mis primeros pasos en Ingeniería Electrónica descubrí mi interés por entender cómo funcionan las cosas, lo que más adelante me llevó al mundo del desarrollo. Actualmente estudio Analista en Sistemas, donde encontré el espacio ideal para unir mi lado técnico con mi curiosidad por crear y resolver problemas.</p>
+                    <p>A lo largo de mi experiencia en soporte técnico aprendí a analizar, mantener y optimizar sistemas, pero lo que más disfruto es la parte lógica y de desarrollo: escribir código, diseñar bases de datos y ver cómo una idea se convierte en una herramienta funcional.</p>
+                    <p>Me considero una persona perseverante, autodidacta y con una gran orientación al detalle. Busco seguir creciendo en el ámbito del desarrollo, aportando soluciones que mejoren la experiencia del usuario y contribuyan al progreso tecnológico.</p>          
             </div>
         </div>
 
@@ -79,22 +88,29 @@
             <H2>TRABAJEMOS JUNTOS</H2>
 
             <div class="container text-center py-5">
-                <a href="/pages/proyectos.html" class="btn btn-outline-light rounded-5" role="button">Ver todos mis proyectos ↗</a>
+                <a href="proyectos.html" class="btn btn-outline-light rounded-5" role="button">Ver todos mis proyectos ↗</a>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="container">
-            <!--linea-->
-            <hr class="border-light  border-2 my-4"> 
-            <div class="row text-center">
-                <p class="col-6">MAXIMILIANO GUZMÁN</p>
-                <div class="col-6">
-                    <div class="d-flex gap-5 justify-content-center">
-                        <div><a href="https://www.linkedin.com/in/maximiliano-guzmán-bb3392174/" class="text-decoration-none text-light"><i class="bi bi-linkedin me-2"></i></a></div>
-                        <div><a href="https://github.com/MaxGuzman17" class="text-decoration-none text-light"><i class="bi bi-github"></i></a></div>
-                    </div>                    
+        <div class="container py-4">
+            <hr class="border-light  border-2">
+            <div class="row align-items-center">
+                <!-- Texto de Copyright/Nombre -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-muted">&copy; 2025 MAXIMILIANO GUZMÁN</p>
+                </div>
+                <!-- Íconos de Redes Sociales -->
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.linkedin.com/in/maximiliano-guzmán-bb3392174/" class="text-muted mx-2"
+                        aria-label="Visitar perfil de LinkedIn">
+                        <i class="bi bi-linkedin fs-4"></i> <!-- Usamos fs-4 para controlar el tamaño del ícono -->
+                    </a>
+                    <a href="https://github.com/MaxGuzman17" class="text-muted mx-2"
+                        aria-label="Visitar perfil de GitHub">
+                        <i class="bi bi-github fs-4"></i>
+                    </a>
                 </div>
             </div>
         </div>
