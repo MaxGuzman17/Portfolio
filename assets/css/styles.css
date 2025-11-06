@@ -26,12 +26,44 @@ h2 {
     transform: scale(1.05);    /* Agranda la imagen un 10% */
 }
 
-.tarjeta {
+.proyectos {
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+.container-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    color: black;
     transition: transform 0.4s ease-in-out;    /* Transición suave */
+}
+
+.tarjeta img{
+    width: 100%;
+    display: block;
 }
 
 .tarjeta:hover {
     transform: scale(1.05);    /* Agranda la imagen un 10% */
+}
+
+.body-tarjeta{
+    padding: 20px;
+}
+
+@media (min-width: 720px) {
+    .container-card{
+    grid-template-columns: repeat(2, 1fr) ;
+    }
 }
 
 
@@ -43,5 +75,7 @@ h2 {
 
     .foto{
     transform: rotate(15deg);
-}
+    }
+
+
 }
