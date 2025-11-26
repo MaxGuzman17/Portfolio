@@ -1,0 +1,17 @@
+@mixin transition($time) {
+    transition: transform $time;
+}
+
+@mixin grid($columns) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: 1.5rem;
+}
+
+@mixin responsive-text($size-base, $size-lg) {
+    font-size: $size-base;
+
+    @media (min-width: 1200px) {
+        font-size: $size-lg;
+    }
+}

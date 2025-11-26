@@ -1,0 +1,13 @@
+@use "../utilities/mixins" as m;
+
+@media (min-width: 720px) {
+    .container-card {
+        @include m.grid(2);
+    }
+}
+
+@media (min-width: 1200px) {
+    .foto {
+        transform: rotate(15deg);
+    }
+}

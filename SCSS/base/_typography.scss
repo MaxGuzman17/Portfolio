@@ -1,0 +1,19 @@
+@use "variables" as v;
+@use "../utilities/mixins" as m;
+
+body {
+    font-family: v.$font-main;
+    padding-top: 70px;
+    background: -webkit-linear-gradient(90deg, #000000,#0d1521,#070e18);background: linear-gradient(90deg, #000000,#0d1521,#070e18);
+}
+
+.textoInicio {
+    font-family: v.$font-title;
+    @include m.responsive-text(3rem, 5rem);
+}
+
+h2 {
+    font-family: v.$font-title;
+    font-size: 40px;
+    padding: 0 0 50px 0;
+}

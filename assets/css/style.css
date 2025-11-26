@@ -1,0 +1,77 @@
+.container-card .tarjeta {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  color: black;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  padding-top: 70px;
+  background: -webkit-linear-gradient(90deg, #000000, #0d1521, #070e18);
+  background: linear-gradient(90deg, #000000, #0d1521, #070e18);
+}
+
+.textoInicio {
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+}
+@media (min-width: 1200px) {
+  .textoInicio {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  padding: 0 0 50px 0;
+}
+
+.imagen img {
+  transition: transform 0.4s ease-in-out;
+}
+.imagen img:hover {
+  transform: scale(1.05);
+}
+
+.img-fluid {
+  max-height: 500px;
+}
+
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+.container-card .tarjeta {
+  transition: transform 0.4s ease-in-out;
+}
+.container-card .tarjeta img {
+  width: 100%;
+  display: block;
+}
+.container-card .tarjeta:hover {
+  transform: scale(1.05);
+}
+.container-card .tarjeta .body-tarjeta {
+  padding: 20px;
+}
+
+@media (min-width: 720px) {
+  .container-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .foto {
+    transform: rotate(15deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

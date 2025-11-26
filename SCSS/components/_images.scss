@@ -1,0 +1,16 @@
+@use "../base/variables" as v;
+@use "../utilities/mixins" as m;
+
+.imagen {
+    img {
+        @include m.transition(v.$transition-base);
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.img-fluid {
+    max-height: 500px;
+}

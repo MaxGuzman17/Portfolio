@@ -1,329 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Portfolio</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <body class="bg-black text-light">
-    <!--NAV ESCRITORIO Y CELULARES-->
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">MAXIMILIANO GUZMÁN</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end text-bg-dark w-50"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                MENÚ
-              </h5>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html"
-                    >INICIO</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/sobreMi.html">SOBRE MÍ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/educacion.html">EDUCACIÓN</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/proyectos.html">PROYECTOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+  <title>Portfolio</title>
+</head>
 
-    <main>
-      <!--PRESENTACIÓN-->
-      <div class="container py-5">
-        <div class="row align-items-center">
-          <div class="col-sm-12 col-lg-8">
-            <h1 class="textoInicio">
-              HOLA SOY<br />MAXIMILIANO GUZMÁN<br />ANALISTA DE SISTEMAS
-            </h1>
-          </div>
-          <div class="foto col-sm-12 col-lg-4 text-center py-5">
-            <img
-              src="assets/img/Foto.png"
-              alt="foto"
-              class="img-fluid rounded-4"
-            />
-          </div>
-        </div>
-        <!--linea-->
-        <hr class="border-light border-2 my-4" />
-        <p class="hero-subtitle text-center">
-          Pasión por crear, resolver y mejorar
-        </p>
-      </div>
-
-      <!--CARRUCEL-->
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide d-md-none"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img
-              src="assets/img/imagen2.png"
-              class="d-block w-100"
-              alt="imagen1"
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-              src="assets/img/imagen1.png "
-              class="d-block w-100"
-              alt="imagen2"
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-              src="assets/img/imagen3.png"
-              class="d-block w-100"
-              alt="imagen3"
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+<body class="text-light">
+  <!--NAV ESCRITORIO Y CELULARES-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MAXIMILIANO GUZMÁN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <!--IMAGENES PARA PANTALLA GRANDE-->
-      <div class="container d-none d-md-block">
-        <div class="row">
-          <div class="imagen col-md-4">
-            <img
-              src="assets/img/imagen2.png"
-              class="img-fluid rounded-4 hover-zoom"
-              alt="imagen1"
-            />
+        <div class="offcanvas offcanvas-end text-bg-dark w-50" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              MENÚ
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
-          <div class="imagen col-md-4">
-            <img
-              src="assets/img/imagen1.png"
-              class="img-fluid rounded-4"
-              alt="imagen2"
-            />
-          </div>
-          <div class="imagen col-md-4">
-            <img
-              src="assets/img/imagen3.png"
-              class="img-fluid rounded-4"
-              alt="imagen3"
-            />
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/sobreMi.html">SOBRE MÍ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/educacion.html">EDUCACIÓN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/proyectos.html">PROYECTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <!--SECCIÓN SOBRE MI-->
-      <div class="container py-5">
+  <main>
+    <!--PRESENTACIÓN-->
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-lg-8">
+          <h1 class="textoInicio" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            HOLA SOY<br />MAXIMILIANO GUZMÁN<br />ANALISTA DE SISTEMAS
+          </h1>
+        </div>
+        <div class="foto col-sm-12 col-lg-4 text-center py-5">
+          <img src="assets/img/Foto.png" alt="foto" class="img-fluid rounded-4" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic" data-aos-duration="2000" />
+        </div>
+      </div>
+      <!--linea-->
+      <hr class="border-light border-2 my-4" />
+      <p class="hero-subtitle text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+        data-aos-offset="0">
+        Pasión por crear, resolver y mejorar
+      </p>
+    </div>
+
+    <!--CARRUCEL-->
+    <div id="carouselExampleAutoplaying" class="carousel slide d-md-none" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="assets/img/imagen2.png" class="d-block w-100" alt="imagen1" />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="assets/img/imagen1.png" class="d-block w-100" alt="imagen2" />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="assets/img/imagen3.png" class="d-block w-100" alt="imagen3" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--IMAGENES PARA PANTALLA GRANDE-->
+    <div class="container d-none d-md-block" data-aos="fade-up" data-aos-duration="3000">
+      <div class="row">
+        <div class="imagen col-md-4">
+          <img src="assets/img/imagen2.png" class="img-fluid rounded-4 hover-zoom" alt="imagen1" />
+        </div>
+        <div class="imagen col-md-4">
+          <img src="assets/img/imagen1.png" class="img-fluid rounded-4" alt="imagen2" />
+        </div>
+        <div class="imagen col-md-4">
+          <img src="assets/img/imagen3.png" class="img-fluid rounded-4" alt="imagen3" />
+        </div>
+      </div>
+    </div>
+
+    <!--SECCIÓN SOBRE MI-->
+    <div class="container py-5" data-aos="fade-up" data-aos-duration="3000">
+      <div class="row">
+        <div class="col-sm-12 col-lg-5">
+          <h2>SOBRE Mí</h2>
+        </div>
+        <div class="col-sm-12 col-lg-7">
+          <p>
+            Soy Analista en Sistemas en formación, con base técnica en
+            electrónica y pasión por el desarrollo. Disfruto crear soluciones
+            que combinan lógica, diseño y tecnología, siempre buscando mejorar
+            y aprender algo nuevo cada día.
+          </p>
+        </div>
+      </div>
+      <div class="container mt-5 text-center">
+        <a href="pages/sobreMi.html" class="btn btn-outline-light rounded-5" role="button">Más sobre mí ↗</a>
+      </div>
+      <!--linea-->
+      <hr class="border-light border-2 my-4" />
+    </div>
+
+    <!--SECCIÓN EDUCACIÓN-->
+    <div class="container text-start" data-aos="fade-up" data-aos-duration="3000">
+      <h2 class="text-center">EDUCACIÓN</h2>
+      <div class="container">
+        <hr class="w-70 mx-auto my-4" />
         <div class="row">
-          <div class="col-sm-12 col-lg-5">
-            <h2>SOBRE Mí</h2>
-          </div>
-          <div class="col-sm-12 col-lg-7">
+          <span class="col-1">[01]</span>
+          <p class="col-11">ANALISTA DE SISTEMAS</p>
+        </div>
+        <hr class="w-70 mx-auto my-4" />
+        <div class="row">
+          <span class="col-1">[01]</span>
+          <p class="col-11">DESARROLLO WEB</p>
+        </div>
+        <hr class="w-70 mx-auto my-4" />
+      </div>
+      <div class="container text-center">
+        <a href="pages/educacion.html" class="btn btn-outline-light rounded-5" role="button">Más de mi educación ↗</a>
+      </div>
+      <!--linea-->
+      <hr class="border-light border-2 my-4" />
+    </div>
+
+    <!--SECCIÓN PROYECTOS-->
+    <div class="container text-center" data-aos="fade-up" data-aos-duration="3000">
+      <h2 class="proyectos">PROYECTOS</h2>
+      <div class="container-card">
+        <div class="tarjeta">
+          <img src="assets/img/proyecto1.png" alt="proyecto1" />
+          <div class="body-tarjeta">
+            <h3>Proyecto 1</h3>
             <p>
-              Soy Analista en Sistemas en formación, con base técnica en
-              electrónica y pasión por el desarrollo. Disfruto crear soluciones
-              que combinan lógica, diseño y tecnología, siempre buscando mejorar
-              y aprender algo nuevo cada día.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              repellat, vitae fuga ducimus ab repudiandae saepe sequi autem
+              facere suscipit excepturi voluptas ipsa numquam odit dolorem
+              cupiditate voluptatibus veritatis in.
             </p>
           </div>
         </div>
-        <div class="container mt-5 text-center">
-          <a
-            href="pages/sobreMi.html"
-            class="btn btn-outline-light rounded-5"
-            role="button"
-            >Más sobre mí ↗</a
-          >
-        </div>
-        <!--linea-->
-        <hr class="border-light border-2 my-4" />
-      </div>
-
-      <!--SECCIÓN EDUCACIÓN-->
-      <div class="container text-start">
-        <h2 class="text-center">EDUCACIÓN</h2>
-        <div class="container">
-          <hr class="w-70 mx-auto my-4" />
-          <div class="row">
-            <span class="col-1">[01]</span>
-            <p class="col-11">ANALISTA DE SISTEMAS</p>
-          </div>
-          <hr class="w-70 mx-auto my-4" />
-          <div class="row">
-            <span class="col-1">[01]</span>
-            <p class="col-11">DESARROLLO WEB</p>
-          </div>
-          <hr class="w-70 mx-auto my-4" />
-        </div>
-        <div class="container text-center">
-          <a
-            href="pages/educacion.html"
-            class="btn btn-outline-light rounded-5"
-            role="button"
-            >Más de mi educación ↗</a
-          >
-        </div>
-        <!--linea-->
-        <hr class="border-light border-2 my-4" />
-      </div>
-
-      <!--SECCIÓN PROYECTOS-->
-      <div class="container">
-        <h2 class="proyectos">PROYECTOS</h2>
-        <div class="container-card">
-          <div class="tarjeta">
-            <img src="assets/img/proyecto1.png" alt="proyecto1" />
-            <di class="body-tarjeta">
-              <h3>Proyecto 1</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                repellat, vitae fuga ducimus ab repudiandae saepe sequi autem
-                facere suscipit excepturi voluptas ipsa numquam odit dolorem
-                cupiditate voluptatibus veritatis in.
-              </p>
-            </di>
-          </div>
-          <div class="tarjeta">
-            <img src="assets/img/proyecto2.png" alt="proyecto2" />
-            <div class="body-tarjeta">
-              <h3>Proyecto 2</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                repellat, vitae fuga ducimus ab repudiandae saepe sequi autem
-                facere suscipit excepturi voluptas ipsa numquam odit dolorem
-                cupiditate voluptatibus veritatis in.
-              </p>
-            </div>
+        <div class="tarjeta">
+          <img src="assets/img/proyecto2.png" alt="proyecto2" />
+          <div class="body-tarjeta">
+            <h3>Proyecto 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              repellat, vitae fuga ducimus ab repudiandae saepe sequi autem
+              facere suscipit excepturi voluptas ipsa numquam odit dolorem
+              cupiditate voluptatibus veritatis in.
+            </p>
           </div>
         </div>
       </div>
+    </div>
 
-      <!--SECCIÓN FINAL-->
-      <div class="container py-5 text-center">
-        <p class="py-5">TIENES UN PROYECTO EN MENTE?</p>
-        <h2>TRABAJEMOS JUNTOS</h2>
+    <!--SECCIÓN FINAL-->
+    <div class="container py-5 text-center" data-aos="fade-up" data-aos-duration="3000">
+      <p class="py-5">TIENES UN PROYECTO EN MENTE?</p>
+      <h2>TRABAJEMOS JUNTOS</h2>
 
-        <div class="container text-center py-5">
-          <a
-            href="pages/proyectos.html"
-            class="btn btn-outline-light rounded-5"
-            role="button"
-            >Ver todos mis proyectos ↗</a
-          >
+      <div class="container text-center py-5">
+        <a href="pages/proyectos.html" class="btn btn-outline-light rounded-5" role="button">Ver todos mis proyectos
+          ↗</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container py-4">
+      <hr class="border-light border-2" />
+      <div class="row align-items-center">
+        <!-- Texto de Copyright/Nombre -->
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0 text-light">&copy; 2025 MAXIMILIANO GUZMÁN</p>
+        </div>
+        <!-- Íconos de Redes Sociales -->
+        <div class="col-md-6 text-center text-md-end">
+          <a href="https://www.linkedin.com/in/maximiliano-guzmán-bb3392174/" class="text-light mx-2"
+            aria-label="Visitar perfil de LinkedIn">
+            <i class="bi bi-linkedin fs-4"></i>
+            <!-- Usamos fs-4 para controlar el tamaño del ícono -->
+          </a>
+          <a href="https://github.com/MaxGuzman17" class="text-light mx-2" aria-label="Visitar perfil de GitHub">
+            <i class="bi bi-github fs-4"></i>
+          </a>
         </div>
       </div>
-    </main>
+    </div>
+  </footer>
 
-    <footer>
-      <div class="container py-4">
-        <hr class="border-light border-2" />
-        <div class="row align-items-center">
-          <!-- Texto de Copyright/Nombre -->
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <p class="mb-0 text-muted">&copy; 2025 MAXIMILIANO GUZMÁN</p>
-          </div>
-          <!-- Íconos de Redes Sociales -->
-          <div class="col-md-6 text-center text-md-end">
-            <a
-              href="https://www.linkedin.com/in/maximiliano-guzmán-bb3392174/"
-              class="text-muted mx-2"
-              aria-label="Visitar perfil de LinkedIn"
-            >
-              <i class="bi bi-linkedin fs-4"></i>
-              <!-- Usamos fs-4 para controlar el tamaño del ícono -->
-            </a>
-            <a
-              href="https://github.com/MaxGuzman17"
-              class="text-muted mx-2"
-              aria-label="Visitar perfil de GitHub"
-            >
-              <i class="bi bi-github fs-4"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

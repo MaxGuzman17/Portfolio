@@ -1,0 +1,25 @@
+@use "../base/variables" as v;
+@use "../utilities/mixins" as m;
+@use "../utilities/extends";
+
+.container-card {
+    @include m.grid(1);
+
+    .tarjeta {
+        @extend %card-base;
+        @include m.transition(v.$transition-base);
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        .body-tarjeta {
+            padding: v.$spacing-small;
+        }
+    }
+}
