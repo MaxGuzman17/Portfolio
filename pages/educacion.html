@@ -14,13 +14,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <title>Mí Educación</title>
+    <meta name="description"
+        content="Formación académica de Maximiliano Guzmán: Analista de Sistemas y Desarrollo Web. Conocé mi trayectoria educativa orientada al desarrollo de software.">
+    <meta name="keywords"
+        content="educación, analista de sistemas, desarrollo web, formación, estudios, carrera, maximiliano guzman">
+    <meta name="author" content="Maximiliano Guzmán">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Educación - Maximiliano Guzmán">
+    <meta property="og:description" content="Mi formación como Analista de Sistemas y Desarrollo Web.">
+    <meta property="og:image" content="../assets/img/miPortfolio.webp">
+    <meta property="og:url" content="https://TU-DOMINIO.com/educacion.html">
+
+    <link rel="icon" type="image/ico" href="../assets/img/favicon.ico">
+
+    <title>Educación | Maximiliano Guzmán - Analista de Sistemas y Desarrollo Web</title>
+
 </head>
 
 <body class="bg-black text-light">
     <!--NAV ESCRITORIO Y CELULARES-->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" role="navigation"
+            aria-label="Menú principal">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">MAXIMILIANO GUZMÁN</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -60,10 +76,11 @@
     </header>
     <main>
         <!--PRESENTACIÓN-->
-        <div class="container py-5">
+        <section class="container py-5">
             <div class="row align-items-center">
                 <div>
-                    <h1 class="textoInicio" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <h1 class="textoInicio" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        aria-label="Mi educación">
                         MI EDUCACIÓN</h1>
                 </div>
             </div>
@@ -72,32 +89,33 @@
             <div class="container text-start" data-aos="fade-up" data-aos-duration="3000">
                 <div class="container">
                     <hr class="w-70 mx-auto my-4">
-                    <div class="row">
+                    <div class="row" role="listitem">
                         <span class="col-1">[01]</span>
                         <p class="col-11">ANALISTA DE SISTEMAS</p>
                     </div>
                     <hr class="w-70 mx-auto my-4">
-                    <div class="row">
-                        <span class="col-1">[01]</span>
+                    <div class="row" role="listitem">
+                        <span class="col-1">[02]</span>
                         <p class="col-11">DESARROLLO WEB</p>
                     </div>
                     <hr class="w-70 mx-auto my-4">
                 </div>
             </div>
+        </section>
 
-            <!--SECCIÓN FINAL-->
-            <div class="container py-5 text-center" data-aos="fade-up" data-aos-duration="3000">
-                <p class="py-5">TIENES UN PROYECTO EN MENTE?</p>
-                <H2>TRABAJEMOS JUNTOS</H2>
+        <!--SECCIÓN FINAL-->
+        <section class="container py-5 text-center" data-aos="fade-up" data-aos-duration="3000">
+            <p class="py-5">TIENES UN PROYECTO EN MENTE?</p>
+            <H2>TRABAJEMOS JUNTOS</H2>
 
-                <div class="container text-center py-5">
-                    <a href="proyectos.html" class="btn btn-outline-light rounded-5" role="button">Ver todos mis
-                        proyectos ↗</a>
-                </div>
+            <div class="container text-center py-5">
+                <a href="proyectos.html" class="btn btn-outline-light rounded-5" role="button">Ver todos mis
+                    proyectos ↗</a>
             </div>
+        </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container py-4">
             <hr class="border-light border-2" />
             <div class="row align-items-center">

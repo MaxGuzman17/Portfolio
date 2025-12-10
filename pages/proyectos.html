@@ -2,162 +2,172 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <title>Mis Proyectos</title>
-  </head>
-  <body class="bg-black text-light">
-    <!--NAV ESCRITORIO Y CELULARES-->
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">MAXIMILIANO GUZMÁN</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end text-bg-dark w-50"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                MENÚ
-              </h5>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="sobreMi.html">SOBRE MÍ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="educacion.html">EDUCACIÓN</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="proyectos.html"
-                    >PROYECTOS</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">CONTACTO</a>
-                </li>
-              </ul>
-            </div>
+  <meta name="description"
+    content="Proyectos desarrollados por Maximiliano Guzmán: Hi-Chat, AquaTruck, eCommerce y Portfolio Web. Aplicaciones web, interfaces, APIs y sistemas completos.">
+  <meta name="keywords"
+    content="proyectos, desarrollo web, sistemas, portfolio, aplicaciones, frontend, backend, maximiliano guzman">
+  <meta name="author" content="Maximiliano Guzmán">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Proyectos - Maximiliano Guzmán">
+  <meta property="og:description"
+    content="Conocé mis proyectos desarrollados: Hi-Chat, AquaTruck, eCommerce y Portfolio Web.">
+  <meta property="og:image" content="../assets/img/miPortfolio.webp">
+  <meta property="og:url" content="https://TU-DOMINIO.com/proyectos.html">
+
+  <link rel="icon" type="image/ico" href="../assets/img/favicon.ico">
+
+  <title>Proyectos | Maximiliano Guzmán - Desarrollo y Sistemas</title>
+</head>
+
+<body class="bg-black text-light">
+  <!--NAV ESCRITORIO Y CELULARES-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" role="navigation" aria-label="Menú principal">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">MAXIMILIANO GUZMÁN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark w-50" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              MENÚ
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!--PRESENTACIÓN-->
-      <div class="container py-5">
-        <div class="row align-items-center">
-          <div>
-            <h1 class="textoInicio" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">PROYECTOS</h1>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobreMi.html">SOBRE MÍ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="educacion.html">EDUCACIÓN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="proyectos.html">PROYECTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </nav>
+  </header>
+  <main>
+    <!--PRESENTACIÓN-->
+    <section class="container py-5">
+      <div class="row align-items-center">
+        <div>
+          <h1 class="textoInicio" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            aria-label="Mis Proyectos">PROYECTOS
+          </h1>
+        </div>
+      </div>
+      </>
 
       <!--SECCIÓN PROYECTOS-->
-      <div class="container" data-aos="fade-up" data-aos-duration="3000">
+      <section class="container" data-aos="fade-up" data-aos-duration="3000">
         <div class="container-card">
-          <div class="tarjeta">
-            <img src="../assets/img/proyecto1.png" alt="proyecto1" />
-            <di class="body-tarjeta">
-              <h3>Proyecto 1</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                repellat, vitae fuga ducimus ab repudiandae saepe sequi autem
-                facere suscipit excepturi voluptas ipsa numquam odit dolorem
-                cupiditate voluptatibus veritatis in.
-              </p>
-            </di>
-          </div>
-          <div class="tarjeta">
-            <img src="../assets/img/proyecto2.png" alt="proyecto2" />
-            <di class="body-tarjeta">
-              <h3>Proyecto 2</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                repellat, vitae fuga ducimus ab repudiandae saepe sequi autem
-                facere suscipit excepturi voluptas ipsa numquam odit dolorem
-                cupiditate voluptatibus veritatis in.
-              </p>
-            </di>
-          </div>
-          <div class="tarjeta">
-            <img src="../assets/img/proyecto3.png" alt="proyecto3" />
-            <di class="body-tarjeta">
-              <h3>Proyecto 3</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                repellat, vitae fuga ducimus ab repudiandae saepe sequi autem
-                facere suscipit excepturi voluptas ipsa numquam odit dolorem
-                cupiditate voluptatibus veritatis in.
-              </p>
-            </di>
-          </div>
-          <div class="tarjeta">
-            <img src="../assets/img/proyecto4.png" alt="proyecto4" />
+          <div class="tarjeta" role="article">
+            <img src="../assets/img/hiChat.webp" alt="Proyecto Hi-Chat desarrollado en C++" loading="lazy" />
             <div class="body-tarjeta">
-              <h3>Proyecto 4</h3>
+              <h3>Hi-Chat</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                repellat, vitae fuga ducimus ab repudiandae saepe sequi autem
-                facere suscipit excepturi voluptas ipsa numquam odit dolorem
-                cupiditate voluptatibus veritatis in.
+                Aplicación de mensajería desarrollada en C++ con interfaz gráfica WinBGIm. Permite enviar y recibir
+                mensajes en tiempo real mediante comunicación serial RS-232 (COM) entre dos equipos. Incluye
+                personalización visual, soporte para emojis y guardado del historial del chat. Proyecto orientado a
+                comprender comunicación de bajo nivel y manejo de interfaces.
               </p>
+              <a href="https://github.com/MaxGuzman17/Hi-Chat" target="_blank" class="btn btn-dark mt-auto">
+                Ver en GitHub
+              </a>
+            </div>
+          </div>
+          <div class="tarjeta" role="article">
+            <img src="../assets/img/aquaTruck.webp" alt="Proyecto AquaTruck - Sistema de gestión de repartos"
+              loading="lazy" s />
+            <div class="body-tarjeta">
+              <h3>AquaTruck</h3>
+              <p>
+                Sistema web integral para empresas de reparto de soda. Gestiona clientes, productos, pedidos y repartos
+                con una interfaz intuitiva y totalmente responsive. Desarrollado con Node.js + Express, MySQL,
+                autenticación JWT y un frontend dinámico basado en modales y peticiones asincrónicas. Optimizado para
+                consultas en tiempo real y administración completa desde el navegador.
+              </p>
+              <a href="https://github.com/MaxGuzman17/AquaTruck" target="_blank" class="btn btn-dark mt-auto">
+                Ver en GitHub
+              </a>
+            </div>
+          </div>
+          <div class="tarjeta" role="article">
+            <img src="../assets/img/eCommerce.webp" alt="Proyecto eCommerce - Catálogo con filtros y API"
+              loading="lazy" />
+            <div class="body-tarjeta">
+              <h3>eCommerce</h3>
+              <p>
+                Aplicación web de catálogo de productos creada con HTML, CSS y JavaScript puro. Permite buscar por
+                descripción, filtrar por rubro y alternar entre vista de lista y cuadrícula. Se conecta mediante fetch()
+                a
+                una API que obtiene datos desde MySQL. Proyecto enfocado en interactividad, consumo de APIs, responsive
+                design y organización del DOM.
+              </p>
+              <a href="https://github.com/MaxGuzman17/eCommerce" target="_blank" class="btn btn-dark mt-auto">
+                Ver en GitHub
+              </a>
+            </div>
+          </div>
+          <div class="tarjeta" role="article">
+            <img src="../assets/img/miPortfolio.webp" alt="Mi portfolio web personal" loading="lazy" />
+            <div class="body-tarjeta">
+              <h3>Mi Portfolio Web</h3>
+              <p>
+                Sitio web personal diseñado para presentar mis habilidades, proyectos y experiencia de manera clara y
+                profesional. Desarrollado con HTML, CSS y JavaScript, totalmente responsive y optimizado para ofrecer
+                una
+                navegación fluida. Funciona como carta de presentación online, permitiendo acceder a mis trabajos y
+                repositorios.
+              </p>
+              <a href="https://github.com/MaxGuzman17/Portfolio" target="_blank" class="btn btn-dark mt-auto">
+                Ver en GitHub
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!--SECCIÓN FINAL-->
-      <div class="container py-5 text-center" data-aos="fade-up" data-aos-duration="3000">
+      <section class="container py-5 text-center" data-aos="fade-up" data-aos-duration="3000">
         <p class="py-5">TIENES UN PROYECTO EN MENTE?</p>
         <h2>TRABAJEMOS JUNTOS</h2>
 
         <div class="container text-center py-5">
-          <a
-            href="contacto.html"
-            class="btn btn-outline-light rounded-5"
-            role="button"
-            >Contactame ↗</a
-          >
+          <a href="contacto.html" class="btn btn-outline-light rounded-5" role="button">Contactame ↗</a>
         </div>
-      </div>
-    </main>
+      </section>
+  </main>
 
-  <footer>
+  <footer role="contentinfo">
     <div class="container py-4">
       <hr class="border-light border-2" />
       <div class="row align-items-center">
@@ -180,11 +190,12 @@
     </div>
   </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-        AOS.init();
-    </script>
-  </body>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

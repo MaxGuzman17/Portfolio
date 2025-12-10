@@ -14,13 +14,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <title>Contacto</title>
+    <meta name="description"
+        content="Ponete en contacto con Maximiliano Guzmán. Consultas, proyectos y colaboraciones. Email, teléfono y ubicación.">
+    <meta name="keywords"
+        content="contacto, desarrollador web, maximiliano guzman, email, telefono, proyectos, portfolio">
+    <meta name="author" content="Maximiliano Guzmán">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contacto - Maximiliano Guzmán">
+    <meta property="og:description" content="Contactame para trabajar juntos o consultar sobre tu proyecto.">
+    <meta property="og:image" content="../assets/img/miPortfolio.webp">
+    <meta property="og:url" content="https://TU-DOMINIO.com/contacto.html">
+
+    <link rel="icon" type="image/ico" href="../assets/img/favicon.ico">
+
+    <title>Contacto | Maximiliano Guzmán - Desarrollador Web & Analista de Sistemas</title>
+
 </head>
 
 <body class="bg-black text-light">
     <!--NAV ESCRITORIO Y CELULARES-->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" role="navigation"
+            aria-label="Menú principal">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">MAXIMILIANO GUZMÁN</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -61,28 +77,29 @@
 
     <main>
         <!--PRESENTACIÓN-->
-        <div class="container py-5">
+        <section class="container py-5">
             <div class="row align-items-center">
                 <div>
-                    <h1 class="textoInicio" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <h1 class="textoInicio" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        aria-label="Hablemos de tu proyecto">
                         HABLEMOS DE<br>TU PROYECTO</h1>
                 </div>
             </div>
             <!--linea-->
             <hr class="border-light  border-2 my-4">
-        </div>
+        </section>
 
-        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+        <section class="container" data-aos="fade-up" data-aos-duration="3000">
             <h2>CONTACTAME</h2>
-            <div class="column">
-                <p><i class="bi bi-envelope"></i> maxiguz17@gmail.com</p>
-                <p><i class="bi bi-telephone"></i> +54 (353) 4136100</p>
-                <p><i class="bi bi-geo-alt"></i> Paraguay 360, Las Varillas, Córdoba, Argentina</p>
+            <div class="column" role="list">
+                <p><i class="bi bi-envelope" role="listitem"></i> maxiguz17@gmail.com</p>
+                <p><i class="bi bi-telephone" role="listitem"></i> +54 (353) 4136100</p>
+                <p><i class="bi bi-geo-alt" role="listitem"></i> Paraguay 360, Las Varillas, Córdoba, Argentina</p>
             </div>
-        </div>
+        </section>
 
         <!--SECCIÓN FINAL-->
-        <div class="container py-5 text-center" data-aos="fade-up" data-aos-duration="3000">
+        <section class="container py-5 text-center" data-aos="fade-up" data-aos-duration="3000">
             <p class="py-5">¿TIENES UN PROYECTO EN MENTE?</p>
             <H2>¡TRABAJEMOS JUNTOS!</H2>
 
@@ -90,10 +107,10 @@
                 <a href="proyectos.html" class="btn btn-outline-light rounded-5" role="button">Ver todos mis proyectos
                     ↗</a>
             </div>
-        </div>
+        </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container py-4">
             <hr class="border-light border-2" />
             <div class="row align-items-center">
